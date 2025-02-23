@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+  <title>BreizhCrops</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="https://carto.com/favicon.ico" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<style>
+.row {
+  margin-bottom: 60px
+}
+.jumbotron{
+  background-color: #0065bd;
+  color:#ffffff;
+}
+
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="jumbotron">
+    <div class="row" style="margin-bottom: 0px;">
+      <div class="col-7" style="">
+        <h1>Breizhcrops</h1>
+        <p>A Satellite Time Series Dataset for Crop Type Mapping</p>
+      </div>
+      <div class="col-5">
+        <img style="margin-right:20px" height="50px" src="logo_tum.png"></img>
+        <img height="75px" src="logo_irisa.png"></img>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+
+
+<p>
+<h5>Evaluation Results</h5>
+Explore the evaluation results qualitatively <img height=20px src="arrow-right-solid.svg"></img><br>
+and quantitatively <img height=20px src="arrow-down-solid.svg"></img>
+
+<table border="0px" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>average accuracy</th>
+      <th>overall accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>lstm</th>
+      <td>0.57</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>transformer</th>
+      <td>0.58</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>tempcnn</th>
+      <td>0.55</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>starrnn</th>
+      <td>0.58</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>msresnet</th>
+      <td>0.51</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>omniscalecnn</th>
+      <td>0.53</td>
+      <td>0.77</td>
+    </tr>
+  </tbody>
+</table>
+<small class="text-muted">last update 8.5.2020</small>
+
+    </div>
+  <div class="col-8">
+    <iframe width="100%" height="100%" frameborder="0" src="https://marccoru.carto.com/builder/c679118c-8bf9-4978-8857-00271b04c176/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-6">
+
+      <h5>Python Package</h5>
+
+      The dataset, model source codes and pretrained weights can be obtained via
+      a python package. Install with
+      <pre><code class="bash">pip install breizhcrops</code></pre>
+      and run the minimal working example
+      <pre><code class="python">
+import breizhcrops as bzh
+dataset = bzh.BreizhCrops("frh04")
+x, y, field_id = dataset[0]
+model = models.pretrained("Transformer")
+y_pred = model(x.unsqueeze(0))
+      </code></pre>
+      to get started.
+    </div>
+    <div class="col-6">
+    <h5>Github Repository</h5>
+
+    <p>
+      Please feel free to contribute models, open issues, <a class="github-button" href="https://github.com/dl4sits/breizhcrops/fork" data-icon="octicon-repo-forked" aria-label="Fork dl4sits/breizhcrops on GitHub">Fork</a>
+      and
+      <a class="github-button" href="https://github.com/dl4sits/breizhcrops" data-icon="octicon-star" aria-label="Star dl4sits/breizhcrops on GitHub"></a>
+      our <a href="https://github.com/dl4sits/breizhcrops" >GitHub repository</a>
+    </p>
+
+    <div class="github-card" data-github="dl4sits/BreizhCrops" data-width="400" data-height="" data-theme="default"></div>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+      <h5>Reference</h5>
+      <p>
+      Please consider citing our paper <a href="https://arxiv.org/abs/1905.11893">BreizhCrops: A Time Series Dataset for Crop Type Mapping</a>
+      </p>
+      <!--
+
+    -->
+      <pre><code class="bibtex">
+@article{breizhcrops2020,
+  title={BreizhCrops: A Time Series Dataset for Crop Type Mapping},
+  author={Ru{\ss}wurm, Marc and Pelletier, Charlotte and Zollner, Maximilian and Lef{\`e}vre, S{\'e}bastien and K{\"o}rner, Marco},
+  journal={International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences ISPRS (2020)},
+  year={2020}
+}
+      </code></pre>
+
+    </div>
+</div>
+    <!--
+    <div class="col-4">
+
+      <h5>Acknowledgements</h5>
+
+      <ul>
+        <li>IGN for data</li>
+        <li>Source code for models</li>
+        <li>Others?</li>
+      </ul>
+
+  </div>
+-->
+
+
+<footer class="footer">
+  <small class="text-muted">
+    <p>Arrow icons from <a href="http://www.flaticon.com/">flaticon.com</a>. <a href=impressum.html>Impressum</a>. Copyright &copy; Marc Rußwurm <script>document.write(new Date().getFullYear())</script>  </p>
+  </small>
+</footer>
+
+</div>
+
+    </body>
+</html>

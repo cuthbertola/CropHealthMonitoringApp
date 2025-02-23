@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Add permissions for the app -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Declare that the app requires a camera -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- Add permission for posting notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Add permission for Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CropHealthMonitoringApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CropHealthMonitoringApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <!-- Firebase Metadata -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_color" />
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" /> <!-- Launcher Activity: WelcomeActivity is the first screen users see -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Login Activity, accessed after WelcomeActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Main Activity, only accessible after login -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="CropHealthMonitoringApp"
+            android:theme="@style/Theme.CropHealthMonitoringApp" />
+    </application>
+
+</manifest>

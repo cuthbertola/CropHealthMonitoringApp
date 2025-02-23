@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/expertImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/expertNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expert Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/expertSpecializationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specialization: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/expertExperienceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience: "
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/expertCertificationsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certifications: "
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/expertBioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bio: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/chatWithExpertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat with Expert"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

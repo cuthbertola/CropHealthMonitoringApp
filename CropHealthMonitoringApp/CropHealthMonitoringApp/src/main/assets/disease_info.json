@@ -1,0 +1,42 @@
+{
+  "Apple Scab Leaf": {
+    "description": "Apple scab is a fungal disease that causes dark, scabby lesions on leaves, which can reduce photosynthesis and fruit quality.",
+    "recommendation": "Apply fungicide sprays such as myclobutanil at regular intervals during the growing season. Ensure good airflow around the tree by pruning."
+  },
+  "Apple rust leaf": {
+    "description": "Apple rust is caused by the fungus Gymnosporangium juniperi-virginianae. It creates bright yellow or orange spots on the leaves, which can eventually cause leaves to fall prematurely.",
+    "recommendation": "Prune infected leaves and apply fungicides such as myclobutanil. Ensure there's a safe distance between apple trees and junipers, which act as alternate hosts for the rust."
+  },
+  "Blueberry leaf": {
+    "description": "The blueberry plant's leaf is showing signs of stress, possibly due to nutrient deficiencies or fungal infection.",
+    "recommendation": "Check soil pH and nutrient levels. Consider applying a balanced fertilizer and check for signs of fungal growth."
+  },
+  "Cherry leaf": {
+    "description": "Cherry leaf spot is caused by the fungus Blumeriella jaapii, which leads to purple or brown spots on the leaves, causing early leaf drop.",
+    "recommendation": "Remove and dispose of infected leaves, and apply fungicide sprays. Prune the tree to allow better air circulation."
+  },
+  "Corn leaf blight": {
+    "description": "Corn leaf blight is caused by a fungal pathogen and results in elongated gray-green lesions on the leaves, which can reduce yield.",
+    "recommendation": "Use disease-resistant varieties and rotate crops. Apply foliar fungicides during the growing season as needed."
+  },
+  "Corn rust leaf": {
+    "description": "Corn rust is a fungal disease that causes rust-colored pustules on leaves. It can significantly impact yield if left untreated.",
+    "recommendation": "Use resistant hybrids if available. Apply fungicides such as those containing propiconazole to manage severe infections."
+  },
+  "Tomato Septoria leaf spot": {
+    "description": "Septoria leaf spot is a fungal disease causing numerous circular dark spots on tomato leaves, leading to defoliation.",
+    "recommendation": "Remove affected leaves and apply a fungicide like copper-based sprays. Ensure proper plant spacing to improve air circulation."
+  },
+  "Tomato leaf late blight": {
+    "description": "Late blight is a devastating disease that causes brown spots with rings on leaves, often leading to leaf collapse.",
+    "recommendation": "Remove and destroy infected leaves and apply fungicides containing copper. Avoid overhead irrigation to reduce humidity around the plants."
+  },
+  "Tomato leaf mosaic virus": {
+    "description": "Mosaic virus causes mottled light and dark green patterns on leaves, stunting the plant's growth.",
+    "recommendation": "Remove infected plants to prevent spread. Control insect vectors like aphids and sanitize garden tools after use."
+  },
+  "grape leaf": {
+    "description": "Grapevine leaf spots may be due to powdery mildew, downy mildew, or other fungal infections, causing discoloration and affecting photosynthesis.",
+    "recommendation": "Apply sulfur or copper-based fungicides. Prune to increase airflow and remove infected leaves."
+  }
+}

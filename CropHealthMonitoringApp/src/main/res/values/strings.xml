@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Crop Health Monitoring App</string>
+    <string name="capture_button">Capture Image</string>
+    <string name="gallery_button">Select from Gallery</string>
+    <string name="prediction_text">Prediction</string>
+    <string name="confidence_text">Confidence</string>
+    <string name="feedback_yes">Yes</string>
+    <string name="feedback_no">No</string>
+    <string name="thank_you_feedback">Thank you for your feedback!</string>
+    <string name="improve_model_feedback">Thank you for your feedback! We will work to improve the model.</string>
+    <string name="notification_title">High Confidence Disease Detection</string>
+    <string name="notification_content">Detected %1$s with %2$.2f%% confidence. Immediate action is recommended.</string>
+    <string name="consult_expert">The confidence is low, consider consulting an agricultural expert.</string>
+    <string name="image_suggestion">The image quality is unclear, please upload a clearer image.</string>
+
+    <!-- Added strings for Login Activity -->
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Log In</string>
+    <string name="register_text">Dont have an account? Sign up here</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="empty_credentials">Please enter username and password</string>
+    <string name="registration_coming_soon">Registration available soon!</string>
+
+    <!-- Added strings for Registration Activity -->
+    <string name="full_name_hint">Full Name</string>
+    <string name="email_hint">Email</string>
+    <string name="farmer">Farmer</string>
+    <string name="expert">Expert</string>
+    <string name="register_button">Register</string>
+    <string name="already_have_account">Already have an account? Log in</string>
+
+    <!-- Added strings for Chat Messages -->
+    <string name="sample_message">Sample Message</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="sender">Sender</string>
+    <string name="type_message_hint">Type a message...</string> <!-- This is the missing string resource -->
+    <string name="send_button_text">Send</string> <!-- Added for button text -->
+    <string name="welcome_back_text">Welcome Back</string>
+
+    <string name="signup_prompt_text">Dont have an account? Register as:</string>
+    <string name="signup_farmer_text">Sign Up as Farmer</string>
+    <string name="signup_expert_text">Sign Up as Expert</string>
+    <string name="choose_role">Choose Your Role</string>
+
+    <!-- New string for Chat Toolbar Title -->
+    <string name="chat_toolbar_title">Chat with Expert</string> <!-- Added toolbar title -->
+</resources>

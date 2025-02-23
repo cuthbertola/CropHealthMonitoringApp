@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/lightGreen">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome_back_text"
+        android:textSize="28sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="20dp"
+        android:hint="@string/username_hint"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/input_field_background" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:autofillHints="password"
+        android:background="@drawable/input_field_background" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_button_text"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@android:color/white"
+        android:padding="16dp" />
+
+    <!-- Signup Prompt -->
+    <TextView
+        android:id="@+id/signupPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signup_prompt_text"
+        android:textColor="@android:color/black"
+        android:padding="8dp" />
+
+    <!-- Signup as Farmer Button -->
+    <Button
+        android:id="@+id/registerFarmerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@id/signupPrompt"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="@string/signup_farmer_text"
+        android:textColor="@android:color/white" />
+
+    <!-- Signup as Expert Button -->
+    <Button
+        android:id="@+id/registerExpertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@id/registerFarmerButton"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="@string/signup_expert_text"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

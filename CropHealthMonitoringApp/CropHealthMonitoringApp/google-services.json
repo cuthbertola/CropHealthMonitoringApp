@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "717210040408",
+    "project_id": "crophealthmonitoringapp",
+    "storage_bucket": "crophealthmonitoringapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717210040408:android:e2e559882c382adddc322d",
+        "android_client_info": {
+          "package_name": "com.example.crophealthmonitoringapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABzjIpaA86jhU-aGHys4lB_6GNJVERl4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
